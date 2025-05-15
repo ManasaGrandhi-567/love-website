@@ -1,0 +1,24 @@
+body {
+    background-color: #ffebee;
+    font-family: 'Arial', sans-serif;
+    color: #d50000;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #c2185b;
+}
+
+.love-statements {
+    font-size: 24px;
+    margin-top: 20px;
+    color: #880e4f;
+}
+
+.love-statements p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
