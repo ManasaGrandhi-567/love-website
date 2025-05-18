@@ -22,3 +22,47 @@ h1 {
     margin: 10px 0;
     line-height: 1.5;
 }
+
+/* Fade-in animation for the container */
+.container {
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(40px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+/* Floating hearts background */
+body::before {
+    content: "❤ ❤ ❤ ❤ ❤";
+    position: fixed;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    font-size: 32px;
+    color: #f06292;
+    opacity: 0.2;
+    letter-spacing: 2vw;
+    animation: floatHearts 8s linear infinite alternate;
+    pointer-events: none;
+    z-index: 0;
+}
+
+@keyframes floatHearts {
+    0% { transform: translateY(0);}
+    100% { transform: translateY(40px);}
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 32px;
+    }
+    .love-statements {
+        font-size: 18px;
+    }
+    body {
+        padding: 20px;
+    }
+}
